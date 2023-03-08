@@ -1,9 +1,14 @@
-// import { getEthUsdPrice } from '@/api/services'
-import { getEthUsdPrice } from '@/api/stubServices'
+import { getEthUsdPrice } from '@/api/services'
+// import { getEthUsdPrice } from '@/api/stubServices'
 import { useQuery } from '@tanstack/react-query'
 
+export interface EthUsdPrice {
+  eth: string;
+  usd: string;
+}
+
 export const useEthUsd = (ethPrice: string) => {
-  const { data, isLoading } = useQuery(
+  const { data, isLoading } = useQuery<EthUsdPrice>(
     {
       queryKey: ['ethUsdPrice'],
       queryFn: getEthUsdPrice

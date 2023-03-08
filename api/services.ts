@@ -1,3 +1,5 @@
+import { EthUsdPrice } from '@/hooks/useEthUsd/useEthUsd'
+import NFPaisano from '@/interfaces/NFPaisano'
 import axios from 'axios'
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
@@ -9,14 +11,14 @@ const config = {
   }
 }
 
-export const getEthUsdPrice = () => {
+export const getEthUsdPrice = (): Promise<EthUsdPrice> => {
   return axios.get(`${API_BASE_URL}/eth-price`, config)
 }
 
-export const getPopularAuctions = () => {
+export const getPopularAuctions = (): Promise<NFPaisano[]> => {
   return axios.get(`${API_BASE_URL}/nfpaisanos/popular`, config)
 }
 
-export const getAllAuctions = () => {
+export const getAllAuctions = (): Promise<NFPaisano[]> => {
   return axios.get(`${API_BASE_URL}/nfpaisanos/aunctions`, config)
 }

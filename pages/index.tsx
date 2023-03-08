@@ -1,5 +1,6 @@
 import { AllAuctions } from '@/components/AllAuctions/AllAuctions'
 import { PopularAuctions } from '@/components/PopularAuctions/PopularAuctions'
+import FiltersProvider from '@/contexts/FiltersContext/FilterContexts'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 
@@ -16,7 +17,9 @@ export default function Home () {
       </Head>
       <div className='container'>
         <PopularAuctions />
-        <AllAuctions />
+        <FiltersProvider>
+          <AllAuctions />
+        </FiltersProvider>
       </div>
     </>
   )

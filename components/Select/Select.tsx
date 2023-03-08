@@ -1,5 +1,3 @@
-// cSpell: disable
-import { Dispatch, SetStateAction } from 'react'
 import { Listbox } from '@headlessui/react'
 import styles from './Select.module.css'
 import Text from '../Text/Text'
@@ -15,8 +13,8 @@ export type SelectElement = {
 export type SelectProps = {
   elements: SelectElement[];
   title: string;
-  value?: SelectElement | undefined;
-  setValue?: Dispatch<SetStateAction<SelectElement | undefined>>;
+  value: SelectElement;
+  setValue: (value: SelectElement) => void;
 }
 
 export const Select = ({ elements, title, value, setValue }: SelectProps) => {
@@ -25,7 +23,7 @@ export const Select = ({ elements, title, value, setValue }: SelectProps) => {
       <Listbox value={value} onChange={setValue}>
         <Listbox.Button className={`${styles.button} ${textFont.className}`}>
           <Text as='span' variant='caption'>
-            {value ? value.name : title}
+            {value.name !== '' ? value.name : title}
           </Text>
           <Button icon={DropdownIcon} size='smallRounded' outline roundedFull aria-label='Open Select Element' />
         </Listbox.Button>
