@@ -57,7 +57,7 @@ const InputSearch = ({
         />
       </div>
       <div className='my-1'>
-        <Button icon={SearchIcon} onClick={handlerAction} primary />
+        <Button icon={SearchIcon} onClick={handlerAction} primary aria-label='search' />
       </div>
     </div>
   )

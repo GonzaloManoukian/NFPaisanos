@@ -27,7 +27,7 @@ export const Select = ({ elements, title, value, setValue }: SelectProps) => {
           <Text as='span' variant='caption'>
             {value ? value.name : title}
           </Text>
-          <Button icon={DropdownIcon} size='smallRounded' outline roundedFull />
+          <Button icon={DropdownIcon} size='smallRounded' outline roundedFull aria-label='Open Select Element' />
         </Listbox.Button>
         <Listbox.Options className={styles.options}>
           {elements.map((element) => (

@@ -70,8 +70,8 @@ export const PopularAuctions = () => {
               <Button outline size='large' fullWidth> View Item </Button>
             </div>
             <div className='flex gapXs'>
-              <Button icon={ArrowLeft} onClick={handlePrevPage} outline />
-              <Button icon={ArrowRight} onClick={handleNextPage} outline />
+              <Button icon={ArrowLeft} onClick={handlePrevPage} outline aria-label='Previous Popular Auction' />
+              <Button icon={ArrowRight} onClick={handleNextPage} aria-label='Next Popular Auction' outline />
             </div>
           </div>
         </div>

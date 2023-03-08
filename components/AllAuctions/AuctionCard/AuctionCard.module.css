@@ -11,7 +11,7 @@
 
 .image {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 0.75;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
