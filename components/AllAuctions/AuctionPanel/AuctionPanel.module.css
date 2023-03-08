@@ -1,0 +1,11 @@
+.auctionPanel {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  gap: 20px;
+}
+
+.auctionCard {
+  width: 100%;
+  max-width: 256px;
+}

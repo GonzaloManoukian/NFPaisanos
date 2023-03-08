@@ -1,0 +1,15 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "cSpell.words": [
+    "aunctions",
+    "cloudinary",
+    "headlessui",
+    "nfpaisanos",
+    "tanstack"
+  ],
+  "[css]": {
+    "editor.formatOnSave": true
+  }
+}

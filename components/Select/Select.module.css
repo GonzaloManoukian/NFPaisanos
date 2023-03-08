@@ -1,0 +1,48 @@
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  padding: 8px 8px 8px 16px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 2px solid #353945;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.options {
+  width: 100%;
+  overflow: auto;
+  background-color: var(--background-color-light);
+  border: 2px solid #353945;
+  border-radius: 12px;
+  padding: 8px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #141416;
+}

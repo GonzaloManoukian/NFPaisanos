@@ -1,0 +1,73 @@
+.button {
+    border-radius: 95px;
+    cursor: pointer;
+}
+
+.buttonChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 95px;
+}
+
+.primary {
+    background: var(--primary-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.standard {
+    background: var(--font-color);
+    color: var(--background-color-light);
+}
+
+.outline {
+    background-color: transparent;
+    color: var(--font-color);
+    border: 2px solid #353945;
+}
+
+.plain {
+    background: none;
+    border: none;
+    color: var(--font-color-light);
+}
+
+.plain:hover {
+    color: var(--font-color);
+}
+
+.small {
+    min-width: 12px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.medium {
+    padding: 0 13px;
+    height: 40px;
+}
+
+.large {
+    padding: 0 20px;
+    height: 48px;
+}
+
+.smallRounded {
+    width: 32px;
+    height: 32px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.roundedFull {
+    border-radius: 50%;
+}
+
+.disabled {
+    border: none;
+    cursor: initial;
+}
