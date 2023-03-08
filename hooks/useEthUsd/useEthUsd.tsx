@@ -1,5 +1,5 @@
-import { getEthUsdPrice } from '@/api/services'
-// import { getEthUsdPrice } from '@/api/stubServices'
+// import { getEthUsdPrice } from '@/api/services'
+import { getEthUsdPrice } from '@/api/stubServices'
 import { useQuery } from '@tanstack/react-query'
 
 export interface EthUsdPrice {

@@ -1,6 +1,6 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": true,
   },
   "cSpell.words": [
     "aunctions",
@@ -11,5 +11,6 @@
   ],
   "[css]": {
     "editor.formatOnSave": true
-  }
+  },
+  "typescriptHero.imports.organizeOnSave": true
 }
