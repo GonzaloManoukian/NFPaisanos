@@ -1,5 +1,6 @@
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
+
 import style from './Icon.module.css'
 
 type IconProps = {
@@ -7,12 +8,13 @@ type IconProps = {
     alt?: string,
     fill?: boolean,
     width?: number,
-    height?: number
+    height?: number,
+    className?: string
 }
 
-export const Icon = ({ src, alt, fill, width, height }: IconProps) => {
+export const Icon = ({ src, alt, fill, width, height, className }: IconProps) => {
   return (
-    <div className={style.icon} style={{ width, height }}>
+    <div className={`${style.icon} ${className}`} style={{ width, height }}>
       <Image
         src={src}
         alt={alt || ''}

@@ -1,8 +1,9 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
+
 import style from './CircleImage.module.css'
 
-type CircleImageProps = {
+interface CircleImageProps extends HTMLAttributes<HTMLDivElement> {
   src: string,
   alt?: string,
   size: 'sm' | 'md',
@@ -13,7 +14,7 @@ type CircleImageProps = {
   className?: string
 }
 
-export const CircleImage = ({ src, alt, size, fill, width, height, bgColor, className }: CircleImageProps) => {
+export const CircleImage = ({ src, alt, size, fill, width, height, bgColor, className, ...divProps }: CircleImageProps) => {
   return (
     <div
       className={`
@@ -25,6 +26,7 @@ export const CircleImage = ({ src, alt, size, fill, width, height, bgColor, clas
       style={{
         background: bgColor
       }}
+      {...divProps}
     >
       <Image
         src={src}

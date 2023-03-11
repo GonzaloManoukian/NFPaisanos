@@ -1,7 +1,8 @@
+import SearchIcon from '@/public/icons/search.svg'
 import { ChangeEvent, KeyboardEvent, memo, useState } from 'react'
+
 import Button from '../Button/Button'
 import styles from './InputSearch.module.css'
-import SearchIcon from '@/public/icons/search.svg'
 
 type InputSearchProps = {
     value?: string,
@@ -57,7 +58,7 @@ const InputSearch = ({
         />
       </div>
       <div className='my-1'>
-        <Button icon={SearchIcon} onClick={handlerAction} primary aria-label='search' />
+        <Button icon={SearchIcon} onClick={handlerAction} primary aria-label='search' data-testid='searchButton' />
       </div>
     </div>
   )

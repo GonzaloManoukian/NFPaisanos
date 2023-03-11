@@ -1,8 +1,9 @@
-import { ButtonHTMLAttributes, memo, MouseEventHandler } from 'react'
-import Spinning from './Spinning'
-import style from './Button.module.css'
 import { titleFont } from '@/utils/fonts'
+import { ButtonHTMLAttributes, memo, MouseEventHandler } from 'react'
+
 import { Icon } from '../Icon/Icon'
+import style from './Button.module.css'
+import Spinning from './Spinning'
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children?: JSX.Element | string;
